@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfect Bite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'perfect-bite-bg': '#ad8e77',
+                        'perfect-bite-text': '#ffffff',
+                    },
+                    screens: {
+                        'xs': '480px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ad8e77;
+            color: #ffffff;
+        }
+        @media (max-width: 767px) {
+            .mobile-stack {
+                flex-direction: column;
+                align-items: center;
+            }
+            .mobile-stack > * {
+                width: 100% !important;
+                margin-bottom: 1rem;
+            }
+            .mobile-nav {
+                display: none;
+            }
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+        @media (min-width: 768px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-perfect-bite-bg text-perfect-bite-text">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="cookie-logo.png" alt="The Perfect Bite Logo" class="w-12 h-12 mr-4">
+            <h1 class="text-2xl font-bold">The Perfect Bite</h1>
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-gray-200 transition">HOME</a></li>
+            <li><a href="#" class="hover:text-gray-200 transition">ABOUT US</a></li>
+            <li><a href="#" class="hover:text-gray-200 transition">PRODUCTS</a></li>
+            <li><a href="#" class="hover:text-gray-200 transition">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-12 flex items-center justify-between">
+        <div class="w-1/2">
+            <h2 class="text-5xl font-bold mb-4">The Perfect Bite</h2>
+            <p class="text-xl mb-6">Bite with our creamy, softness, delicious and sweet cookies!</p>
+            <button class="bg-white text-perfect-bite-bg px-6 py-3 rounded-full hover:bg-gray-100 transition">Get yours now!!</button>
+        </div>
+        <div class="w-1/2 flex justify-end">
+            <img src="hero-cookies.png" alt="Cookies" class="max-w-full h-auto">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Story</h2>
+        <div class="bg-white/10 p-8 rounded-lg">
+            <p class="text-center max-w-2xl mx-auto">
+                At The Perfect Bite, we believe that every bite should bring a little joy. What started as a simple love for baking turned into a passion for crafting cookies that not only taste amazing but also feel like home. From our classic chocolate chip to our adventurous seasonal flavors, every cookie is made with care, quality ingredients, and a whole lot of heart. We're all about the little things—crispy edges, gooey centers, and the perfect balance of sweetness. Whether you're grabbing a quick treat or sharing a box with loved ones, we're here to make your day a little sweeter. Baked fresh, packed with flavor, and delivered with love.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cookie Collection -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Cookie Collection</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="classic-cookie.png" alt="Classic Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Classic Cookie</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="peanut-cookie.png" alt="Peanut Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Peanut Cookie</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="red-velvet-cookie.png" alt="Red Velvet" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Red Velvet</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="matcha-cookie.png" alt="Matcha" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Matcha</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="oreo-cookie.png" alt="Oreo Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Oreo Cookie</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="coconut-cookie.png" alt="Coconut Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Coconut Cookie</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="salted-caramel-cookie.png" alt="Salted Caramel Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Salted Caramel Cookie</h3>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center">
+                <img src="mallows-cookie.png" alt="Mallows Cookie" class="mx-auto mb-4 w-full">
+                <h3 class="text-xl font-bold mb-2">Mallows Cookie</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <div class="max-w-md mx-auto bg-white/10 p-8 rounded-lg text-center">
+            <div class="mb-4">
+                <h3 class="text-xl font-bold mb-2">Phone</h3>
+                <p>09**-***-*****</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-bold mb-2">Email</h3>
+                <p>THEPERFECTBITE@GMAIL.COM</p>
+            </div>
+            <div class="flex space-x-4 justify-center">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white/10 py-6 text-center">
+        <p>&copy; 2025 The Perfect Bite. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
